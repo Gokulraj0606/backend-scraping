@@ -3,7 +3,8 @@ const Product = require("../models/productModel")
 const dotenv = require("dotenv")
 const connectDatabase = require("../config/database")
 
-dotenv.config({ path: "config/config.env" })
+// dotenv.config({ path: "config/config.env" })
+dotenv.config({ path: ".env" })
 connectDatabase()
 
 
