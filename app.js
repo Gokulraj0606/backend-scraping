@@ -20,7 +20,13 @@ app.use("/api/v1/", products)
 app.use("/api/v1/", auth)
 app.use("/api/v1/", order)
 app.use("/api/v1/", payment)
+app.get("/", (req, res) => {
+    res.send("hello world")
+})
 
 app.use(errorMiddleware)
 
 module.exports = app
+
+// http://127.0.0.1:8000
+//http://localhost:3000
