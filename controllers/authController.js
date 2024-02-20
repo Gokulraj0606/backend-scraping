@@ -260,7 +260,7 @@ exports.deleteUser = catchAsyncError(async (req, res, next) => {
 // const sendToken = require("../utils/jwt")
 // const crypto = require("crypto")
 
-// //register user --/api/v1/register
+// //register user ---/api/v1/register
 // exports.registerUser = catchAsyncError(async (req, res, next) => {
 //     const { name, email, password } = req.body
 
