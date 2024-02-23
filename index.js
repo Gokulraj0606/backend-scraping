@@ -1,10 +1,11 @@
+const cors = require("cors")
 const app = require("./app")
 const path = require("path")
 const connectDatabase = require("./config/database")
 
 
 connectDatabase()
-
+app.use(cors())
 const server = app.listen(process.env.PORT, () => {
     console.log(`Server is listening to the port : ${process.env.PORT}`)
 })
